@@ -48,7 +48,8 @@ Basic astronomical events
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The night plan shall include a table of astronimical events that will occurr during the night.
-These events should include
+These events should include:
+
 - Sunrise, Sunset, Nautical Twilight, and Astronomical Twilight times (in LST, MJD, UTC, and civil time).
 - Moon phase, coordinates, rise, transit, and set times (in LST, MJD, UTC, and civil time).
 
