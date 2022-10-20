@@ -21,11 +21,57 @@ Requirements for tools for creating and providing access to scheduler and survey
 Introduction
 ============
 
-External Interface Requirements
-===============================
+This document describes the design constraints and functional requirenemnts on tools for monitoring Rubin Observatory scheduler performants and its progress in completing LSST. 
+
+Related documents
+=================
+
+Requirements listed here provide lower level detail on requirments either explicitly listed in other Rubin Observatory requirements documents, or implied by the operations plan.
+Specific requirements and sections of the operations plan include:
+
+- LST-29: LSST System Requriments Document
+  
+  - LSR-REQ-0065: Survey Performance Reviews
+  - LSR-REQ-0066: Survey Performance Evaluation
+  - LSR-REQ-0070: Science Priorities and Survey Monitoring
+  - LSR-REQ-0071: Scientific Oversight During Data Collection
+- LST-30: Observing System Specification
+  
+  - OSS-REQ-0033: Survey Planning and Performance Monitoring
+  - OSS-REQ-0131: Nightly Summary Products
+
+..
+  - OSS-REQ-0406: Subsystem Nightly Reporting
+  - OSS-REQ-0378: Advanced Publishing of Scheduler Sequence
+  - OSS-REQ-0056: System Monitoring & Diagnostics
+  - OSS-REQ-0067: Performance & Trend Analysis Toolkit
+  - OSS-REQ-0068: Summit Environment Monitoring
+  - OSS-REQ-0072: Weather and Meteorological Monitoring
+  - OSS-REQ-0078: Maintenance Reporting
+  - OSS-REQ-0079: Maintenance Tracking and Analysis
+  - OSS-REQ-0314: Subsystem Performance Reporting
+
+- LSE-369: LSST Scheduler Requirements
+
+  - SCD-REQ-0016: Survey Monitor
+  - SCD-REQ-0059: Survey Progress
+
+- RDO-18: PLAN for the OPERATIONS of the VERA C. RUBIN OBSERVATORY and Execution of its LEGACY SURVEY OF SPACE AND TIME
+
+  - Section 5.4.2 ("survey scheduling" subsection)
+
+In addition, RTN-016: *Background and concepts for monitoring survey progress and scheduler performance* provides a description of the tools required, including use cases, example plots and other visualizations, and a list of tools to be used for different use cases.
+Finally, RTN-037: *Architecture for Scheduler and Observing Progress Monitoring Software* describes the architecture of the software used to fill the requiremnts described here.
 
 Design Constraints
 ==================
+
+FAFF
+----
+
+Functionality required for observatory operations should follow the guidlines set by the "First-Look Analysis and Feedback Functionality Breakout Group."
+At the time of writing, SITCOMTN-025: *First-Look Analysis and Feedback Functionality Breakout Group Report* presents their recommendations.
+Noteble guidlines include the use of ``bokeh`` for visualizations and suppport for ``papermill``  executed parameterized notebooks.
 
 Functional Requirements
 =======================
@@ -36,7 +82,13 @@ Night plan
 Introduction
 ^^^^^^^^^^^^
 
-RTN-016 section 4.2
+.. note::
+   RTN-016 section 4.2
+
+Execution at Rubin Observatory
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Creation of the night plan shall be executable at the observatory site, using site infrastructure.
 
 Automatic creation
 ^^^^^^^^^^^^^^^^^^
@@ -140,10 +192,11 @@ Tools for performance evaluation and analysis
 Introduction
 ^^^^^^^^^^^^
 
-RTN-016 section 4.5
+.. note::
+   RTN-016 section 4.5
 
-Progress reports and performance reviews
-----------------------------------------
+Progress and survey performance reports
+---------------------------------------
 
 Introduction
 ^^^^^^^^^^^^
