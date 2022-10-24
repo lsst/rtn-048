@@ -150,6 +150,7 @@ This table should include columns reporting:
 - the next expected visit date after the specificed night.
 
 Optionally, if provided with a database of visits, the table should include for each DDF:
+
  - start time of actual visits
  - finish time of actual visits
  - depth
@@ -287,6 +288,7 @@ The night plan should include the following:
 - `Survey reward and feasibility plot`_ for the planned night.
 
 The night plan should alse include the following plots for the results of one or `opsim` simulations of the night:
+
 - `Visit property histogram`_ for each simulation of the planned night
 - `Loaded filter plot`_ for each simulation of the planned night
 - `Visit table`_ for the simulation of the planned night
