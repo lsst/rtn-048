@@ -73,6 +73,11 @@ Functionality required for observatory operations should follow the guidlines se
 At the time of writing, SITCOMTN-025: *First-Look Analysis and Feedback Functionality Breakout Group Report* presents their recommendations.
 Noteble guidlines include the use of ``bokeh`` for visualizations and suppport for ``papermill``  executed parameterized notebooks.
 
+Data Management dashboard standards
+===================================
+
+FIXME data management has standardized on using holoviz panel for the implementation of dashboards, and ``schedview`` should use similar infrastructure if possible.
+
 Functional Requirements
 =======================
 
@@ -288,7 +293,7 @@ The night plan should include the following:
 - `Survey reward and feasibility plot`_ for the planned night.
 
 The night plan should alse include the following plots for the results of one or `opsim` simulations of the night:
-
+ 
 - `Visit property histogram`_ for each simulation of the planned night
 - `Loaded filter plot`_ for each simulation of the planned night
 - `Visit table`_ for the simulation of the planned night
