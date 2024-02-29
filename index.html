@@ -1,0 +1,711 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+<title>index.rst</title>
+<style type="text/css">
+
+/*
+:Author: David Goodger (goodger@python.org)
+:Id: $Id: html4css1.css 8954 2022-01-20 10:10:25Z milde $
+:Copyright: This stylesheet has been placed in the public domain.
+
+Default cascading style sheet for the HTML output of Docutils.
+
+See https://docutils.sourceforge.io/docs/howto/html-stylesheets.html for how to
+customize this style sheet.
+*/
+
+/* used to remove borders from tables and images */
+.borderless, table.borderless td, table.borderless th {
+  border: 0 }
+
+table.borderless td, table.borderless th {
+  /* Override padding for "table.docutils td" with "! important".
+     The right padding separates the table cells. */
+  padding: 0 0.5em 0 0 ! important }
+
+.first {
+  /* Override more specific margin styles with "! important". */
+  margin-top: 0 ! important }
+
+.last, .with-subtitle {
+  margin-bottom: 0 ! important }
+
+.hidden {
+  display: none }
+
+.subscript {
+  vertical-align: sub;
+  font-size: smaller }
+
+.superscript {
+  vertical-align: super;
+  font-size: smaller }
+
+a.toc-backref {
+  text-decoration: none ;
+  color: black }
+
+blockquote.epigraph {
+  margin: 2em 5em ; }
+
+dl.docutils dd {
+  margin-bottom: 0.5em }
+
+object[type="image/svg+xml"], object[type="application/x-shockwave-flash"] {
+  overflow: hidden;
+}
+
+/* Uncomment (and remove this text!) to get bold-faced definition list terms
+dl.docutils dt {
+  font-weight: bold }
+*/
+
+div.abstract {
+  margin: 2em 5em }
+
+div.abstract p.topic-title {
+  font-weight: bold ;
+  text-align: center }
+
+div.admonition, div.attention, div.caution, div.danger, div.error,
+div.hint, div.important, div.note, div.tip, div.warning {
+  margin: 2em ;
+  border: medium outset ;
+  padding: 1em }
+
+div.admonition p.admonition-title, div.hint p.admonition-title,
+div.important p.admonition-title, div.note p.admonition-title,
+div.tip p.admonition-title {
+  font-weight: bold ;
+  font-family: sans-serif }
+
+div.attention p.admonition-title, div.caution p.admonition-title,
+div.danger p.admonition-title, div.error p.admonition-title,
+div.warning p.admonition-title, .code .error {
+  color: red ;
+  font-weight: bold ;
+  font-family: sans-serif }
+
+/* Uncomment (and remove this text!) to get reduced vertical space in
+   compound paragraphs.
+div.compound .compound-first, div.compound .compound-middle {
+  margin-bottom: 0.5em }
+
+div.compound .compound-last, div.compound .compound-middle {
+  margin-top: 0.5em }
+*/
+
+div.dedication {
+  margin: 2em 5em ;
+  text-align: center ;
+  font-style: italic }
+
+div.dedication p.topic-title {
+  font-weight: bold ;
+  font-style: normal }
+
+div.figure {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+div.footer, div.header {
+  clear: both;
+  font-size: smaller }
+
+div.line-block {
+  display: block ;
+  margin-top: 1em ;
+  margin-bottom: 1em }
+
+div.line-block div.line-block {
+  margin-top: 0 ;
+  margin-bottom: 0 ;
+  margin-left: 1.5em }
+
+div.sidebar {
+  margin: 0 0 0.5em 1em ;
+  border: medium outset ;
+  padding: 1em ;
+  background-color: #ffffee ;
+  width: 40% ;
+  float: right ;
+  clear: right }
+
+div.sidebar p.rubric {
+  font-family: sans-serif ;
+  font-size: medium }
+
+div.system-messages {
+  margin: 5em }
+
+div.system-messages h1 {
+  color: red }
+
+div.system-message {
+  border: medium outset ;
+  padding: 1em }
+
+div.system-message p.system-message-title {
+  color: red ;
+  font-weight: bold }
+
+div.topic {
+  margin: 2em }
+
+h1.section-subtitle, h2.section-subtitle, h3.section-subtitle,
+h4.section-subtitle, h5.section-subtitle, h6.section-subtitle {
+  margin-top: 0.4em }
+
+h1.title {
+  text-align: center }
+
+h2.subtitle {
+  text-align: center }
+
+hr.docutils {
+  width: 75% }
+
+img.align-left, .figure.align-left, object.align-left, table.align-left {
+  clear: left ;
+  float: left ;
+  margin-right: 1em }
+
+img.align-right, .figure.align-right, object.align-right, table.align-right {
+  clear: right ;
+  float: right ;
+  margin-left: 1em }
+
+img.align-center, .figure.align-center, object.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table.align-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.align-left {
+  text-align: left }
+
+.align-center {
+  clear: both ;
+  text-align: center }
+
+.align-right {
+  text-align: right }
+
+/* reset inner alignment in figures */
+div.align-right {
+  text-align: inherit }
+
+/* div.align-center * { */
+/*   text-align: left } */
+
+.align-top    {
+  vertical-align: top }
+
+.align-middle {
+  vertical-align: middle }
+
+.align-bottom {
+  vertical-align: bottom }
+
+ol.simple, ul.simple {
+  margin-bottom: 1em }
+
+ol.arabic {
+  list-style: decimal }
+
+ol.loweralpha {
+  list-style: lower-alpha }
+
+ol.upperalpha {
+  list-style: upper-alpha }
+
+ol.lowerroman {
+  list-style: lower-roman }
+
+ol.upperroman {
+  list-style: upper-roman }
+
+p.attribution {
+  text-align: right ;
+  margin-left: 50% }
+
+p.caption {
+  font-style: italic }
+
+p.credits {
+  font-style: italic ;
+  font-size: smaller }
+
+p.label {
+  white-space: nowrap }
+
+p.rubric {
+  font-weight: bold ;
+  font-size: larger ;
+  color: maroon ;
+  text-align: center }
+
+p.sidebar-title {
+  font-family: sans-serif ;
+  font-weight: bold ;
+  font-size: larger }
+
+p.sidebar-subtitle {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+p.topic-title {
+  font-weight: bold }
+
+pre.address {
+  margin-bottom: 0 ;
+  margin-top: 0 ;
+  font: inherit }
+
+pre.literal-block, pre.doctest-block, pre.math, pre.code {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+pre.code .ln { color: grey; } /* line numbers */
+pre.code, code { background-color: #eeeeee }
+pre.code .comment, code .comment { color: #5C6576 }
+pre.code .keyword, code .keyword { color: #3B0D06; font-weight: bold }
+pre.code .literal.string, code .literal.string { color: #0C5404 }
+pre.code .name.builtin, code .name.builtin { color: #352B84 }
+pre.code .deleted, code .deleted { background-color: #DEB0A1}
+pre.code .inserted, code .inserted { background-color: #A3D289}
+
+span.classifier {
+  font-family: sans-serif ;
+  font-style: oblique }
+
+span.classifier-delimiter {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+span.interpreted {
+  font-family: sans-serif }
+
+span.option {
+  white-space: nowrap }
+
+span.pre {
+  white-space: pre }
+
+span.problematic {
+  color: red }
+
+span.section-subtitle {
+  /* font-size relative to parent (h1..h6 element) */
+  font-size: 80% }
+
+table.citation {
+  border-left: solid 1px gray;
+  margin-left: 1px }
+
+table.docinfo {
+  margin: 2em 4em }
+
+table.docutils {
+  margin-top: 0.5em ;
+  margin-bottom: 0.5em }
+
+table.footnote {
+  border-left: solid 1px black;
+  margin-left: 1px }
+
+table.docutils td, table.docutils th,
+table.docinfo td, table.docinfo th {
+  padding-left: 0.5em ;
+  padding-right: 0.5em ;
+  vertical-align: top }
+
+table.docutils th.field-name, table.docinfo th.docinfo-name {
+  font-weight: bold ;
+  text-align: left ;
+  white-space: nowrap ;
+  padding-left: 0 }
+
+/* "booktabs" style (no vertical lines) */
+table.docutils.booktabs {
+  border: 0px;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-collapse: collapse;
+}
+table.docutils.booktabs * {
+  border: 0px;
+}
+table.docutils.booktabs th {
+  border-bottom: thin solid;
+  text-align: left;
+}
+
+h1 tt.docutils, h2 tt.docutils, h3 tt.docutils,
+h4 tt.docutils, h5 tt.docutils, h6 tt.docutils {
+  font-size: 100% }
+
+ul.auto-toc {
+  list-style-type: none }
+
+</style>
+</head>
+<body>
+<div class="document">
+
+<table class="docinfo" frame="void" rules="none">
+<col class="docinfo-name" />
+<col class="docinfo-content" />
+<tbody valign="top">
+<tr class="tocdepth field"><th class="docinfo-name">tocdepth:</th><td class="field-body">1</td>
+</tr>
+</tbody>
+</table>
+<!-- Metadata such as the title, authors, and description are set in metadata.yaml -->
+<!-- TODO: Delete the note below before merging new content to the main branch. -->
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><strong>This technote is a work-in-progress.</strong></p>
+</div>
+<div class="section" id="abstract">
+<h1>1&nbsp;&nbsp;&nbsp;Abstract</h1>
+<p>Tools for monitoring and exploring scheduler behavior and survey progress are an important element of Rubin Observatory infrastructure.
+A variety of users will require these data in the form of tables and visualizations, and require access to them in a variety of contexts and environments.
+Examples include telescope operators monitoring the scheduler for problems during observing, managers preparing reports for funding agencies, and scientists from science working groups reviewing the effectiveness or survey strategy as implemented.
+Requirements for tools for creating and providing access to scheduler and survey progress data and visualizations are collected here.</p>
+</div>
+<div class="section" id="introduction">
+<h1>2&nbsp;&nbsp;&nbsp;Introduction</h1>
+<p>This document describes the design constraints and functional requirenemnts on tools for monitoring Rubin Observatory scheduler performants and its progress in completing LSST.</p>
+</div>
+<div class="section" id="related-documents">
+<h1>3&nbsp;&nbsp;&nbsp;Related documents</h1>
+<p>Requirements listed here provide lower level detail on requirments either explicitly listed in other Rubin Observatory requirements documents, or implied by the operations plan.
+Specific requirements and sections of the operations plan include:</p>
+<ul class="simple">
+<li>LST-29: LSST System Requriments Document<ul>
+<li>LSR-REQ-0065: Survey Performance Reviews</li>
+<li>LSR-REQ-0066: Survey Performance Evaluation</li>
+<li>LSR-REQ-0070: Science Priorities and Survey Monitoring</li>
+<li>LSR-REQ-0071: Scientific Oversight During Data Collection</li>
+</ul>
+</li>
+<li>LST-30: Observing System Specification<ul>
+<li>OSS-REQ-0033: Survey Planning and Performance Monitoring</li>
+<li>OSS-REQ-0131: Nightly Summary Products</li>
+</ul>
+</li>
+</ul>
+<!-- - OSS-REQ-0406: Subsystem Nightly Reporting
+- OSS-REQ-0378: Advanced Publishing of Scheduler Sequence
+- OSS-REQ-0056: System Monitoring & Diagnostics
+- OSS-REQ-0067: Performance & Trend Analysis Toolkit
+- OSS-REQ-0068: Summit Environment Monitoring
+- OSS-REQ-0072: Weather and Meteorological Monitoring
+- OSS-REQ-0078: Maintenance Reporting
+- OSS-REQ-0079: Maintenance Tracking and Analysis
+- OSS-REQ-0314: Subsystem Performance Reporting -->
+<ul class="simple">
+<li>LSE-369: LSST Scheduler Requirements<ul>
+<li>SCD-REQ-0016: Survey Monitor</li>
+<li>SCD-REQ-0059: Survey Progress</li>
+</ul>
+</li>
+<li>RDO-18: PLAN for the OPERATIONS of the VERA C. RUBIN OBSERVATORY and Execution of its LEGACY SURVEY OF SPACE AND TIME<ul>
+<li>Section 5.4.2 (&quot;survey scheduling&quot; subsection)</li>
+</ul>
+</li>
+</ul>
+<p>In addition, RTN-016: <em>Background and concepts for monitoring survey progress and scheduler performance</em> provides a description of the tools required, including use cases, example plots and other visualizations, and a list of tools to be used for different use cases.
+Finally, RTN-037: <em>Architecture for Scheduler and Observing Progress Monitoring Software</em> describes the architecture of the software used to fill the requiremnts described here.</p>
+</div>
+<div class="section" id="design-constraints">
+<h1>4&nbsp;&nbsp;&nbsp;Design Constraints</h1>
+<div class="section" id="faff">
+<h2>4.1&nbsp;&nbsp;&nbsp;FAFF</h2>
+<p>Functionality required for observatory operations should follow the guidlines set by the &quot;First-Look Analysis and Feedback Functionality Breakout Group.&quot;
+At the time of writing, SITCOMTN-025: <em>First-Look Analysis and Feedback Functionality Breakout Group Report</em> presents their recommendations.
+Noteble guidlines include the use of <tt class="docutils literal">bokeh</tt> for visualizations and suppport for <tt class="docutils literal">papermill</tt>  executed parameterized notebooks.</p>
+</div>
+</div>
+<div class="section" id="data-management-dashboard-standards">
+<h1>5&nbsp;&nbsp;&nbsp;Data Management dashboard standards</h1>
+<p>FIXME data management has standardized on using holoviz panel for the implementation of dashboards, and <tt class="docutils literal">schedview</tt> should use similar infrastructure if possible.</p>
+</div>
+<div class="section" id="functional-requirements">
+<h1>6&nbsp;&nbsp;&nbsp;Functional Requirements</h1>
+<div class="section" id="tools-for-performance-evaluation-and-analysis">
+<h2>6.1&nbsp;&nbsp;&nbsp;Tools for performance evaluation and analysis</h2>
+<div class="section" id="introduction-1">
+<h3>6.1.1&nbsp;&nbsp;&nbsp;Introduction</h3>
+<p>A variety of vizualizations will be required in different contexts.
+The context withing which the requirements are most general is that of a python module using within <cite>jupyter</cite> notebook to diagnose a problem, or construct a custum, bespoke report of a specific one-time purpose.
+Visualizations in other contexts can all be viewed as specializations of a subset of the vizualizations that may need to be supplied by this module.
+Therefore, requirements for different kinds of visualizations are identified here, and referenced in requirements for other contexts.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">RTN-016 section 4.5</p>
+</div>
+</div>
+<div class="section" id="table-of-astronomical-events">
+<h3>6.1.2&nbsp;&nbsp;&nbsp;Table of astronomical events</h3>
+<p>The <tt class="docutils literal">schedview</tt> module shall include a function to create a table of astnonomical events on a given date.
+Such event should include:</p>
+<ul class="simple">
+<li>Sunrise, Sunset, Nautical Twilight, and Astronomical Twilight times (in LST, MJD, UTC, and civil time).</li>
+<li>Moon phase, coordinates, rise, transit, and set times (in LST, MJD, UTC, and civil time).</li>
+</ul>
+</div>
+<div class="section" id="weather-table">
+<h3>6.1.3&nbsp;&nbsp;&nbsp;Weather table</h3>
+<p>The <tt class="docutils literal">schedview</tt> module shall include a function to create a table of wheather conditions as a function of time.
+Columns should include cloud cover, seeing, temperature, humidity, wind direction, and wind speed.</p>
+<p>Possible sources for the weather should include simulated weather from <cite>rubin_sim</cite>, recorded weather data, and forecasts.</p>
+</div>
+<div class="section" id="sky-map">
+<h3>6.1.4&nbsp;&nbsp;&nbsp;Sky map</h3>
+<p>The <tt class="docutils literal">schedview</tt> module shall include a function to create a sky map showing the distribution of important quantities over the sky.
+This map should include sliders, dropdowns, or text entry boxes that let the reader select the  time, quantity to be mapped, projection, and projection parameters.</p>
+<p>Parameters to be mapped should include:</p>
+<ul class="simple">
+<li>Sky brightness</li>
+<li>Common basis functions<ul>
+<li>Limiting magnitude</li>
+<li>Moon avoidance</li>
+<li>Footprint</li>
+</ul>
+</li>
+<li>Moon location</li>
+<li>Ecliptic</li>
+<li>Galactic plane</li>
+<li>Horizon</li>
+<li>Airmass limit</li>
+<li>Bright stars and planets</li>
+<li>Visits from simulated surveys</li>
+<li>Current MAF metric values (produced by a healpix slicer)</li>
+<li>Simulated final MAF metric values (produced by a healpix slicer)</li>
+</ul>
+</div>
+<div class="section" id="ddf-schedule-table">
+<h3>6.1.5&nbsp;&nbsp;&nbsp;DDF schedule table</h3>
+<p>The <tt class="docutils literal">schedview</tt> module shall include a function to create a table of scheduled DDF sequences of visits for a given scheduler, time, and database of visits (simulated, actual, or hybrid).
+This table should include columns reporting:</p>
+<ul class="simple">
+<li>the time of the most recent visit to each field before the specified night.</li>
+<li>detailed information on any sequences of visits scheduled for the specified night, including<ul>
+<li>filters,</li>
+<li>start time,</li>
+<li>finish time,</li>
+<li>expected depth,</li>
+<li>maximum airmass,</li>
+<li>maximum hour angle,</li>
+<li>minimum angle with moon,</li>
+</ul>
+</li>
+<li>the next expected visit date after the specificed night.</li>
+</ul>
+<p>Optionally, if provided with a database of visits, the table should include for each DDF:</p>
+<blockquote>
+<ul class="simple">
+<li>start time of actual visits</li>
+<li>finish time of actual visits</li>
+<li>depth</li>
+<li>maximum airmass</li>
+</ul>
+</blockquote>
+</div>
+<div class="section" id="ddf-candence-plot">
+<h3>6.1.6&nbsp;&nbsp;&nbsp;DDF candence plot</h3>
+<p>The <tt class="docutils literal">schedview</tt> module shall include a function to create a plot that represents sets of DDF visits as bars for each night.
+See RTN-016 figure 6.</p>
+</div>
+<div class="section" id="field-survey-plot">
+<h3>6.1.7&nbsp;&nbsp;&nbsp;Field survey plot</h3>
+<p>The <tt class="docutils literal">schedview</tt> module shall include a function to create a table of fields in any single field surveys included within a given scheduler, for a specified night.</p>
+<p>This data should include:</p>
+<ul class="simple">
+<li>Times of the night over which the survey is feasible.</li>
+<li>Transit, rise, and set (at airmass limits) for each field (maybe redundant with feasibility times).</li>
+<li>Sky brightness, limiting magnitude, airmass, and angle with moon for each field (partially redundant with feature value plots).</li>
+</ul>
+</div>
+<div class="section" id="visit-table">
+<h3>6.1.8&nbsp;&nbsp;&nbsp;Visit table</h3>
+<p>The <tt class="docutils literal">schedview</tt> module shall include a function to show a table of visits in a given database of visits, in a given time window.
+Columns in this table should include the scheduler call, start time, scheduler name, filter, coordinates, reward, hour angle, slew time, limiting magnitude, airmass, sky brightness, angle with moon. The &quot;scheduler call&quot; identifies which call to the scheduler resulted in the visit. For example, all visits that are part of the same &quot;blob&quot; will have the same scheduler call identifier. What this identifier looks like is TBD; it might be the start time of the first visit scheduled by the call.</p>
+</div>
+<div class="section" id="visit-property-histogram">
+<h3>6.1.9&nbsp;&nbsp;&nbsp;Visit property histogram</h3>
+<p>The <tt class="docutils literal">schedview</tt> module shall include a function to create histograms of visit properties for a given database of visits (simulated, actual, or hybrid), for a given range of times.
+Examples of properties that should be plotted include columns from the <cite>opsim</cite> outputs and derived quantities computed by MAF &quot;stackers&quot;. Examples inclued declination, R.A., H.A., LST, airmass, sky brightness, limiting magnitude, and seeing.</p>
+</div>
+<div class="section" id="visit-property-time-series-plot">
+<h3>6.1.10&nbsp;&nbsp;&nbsp;Visit property time series plot</h3>
+<p>The <tt class="docutils literal">schedview</tt> module shall include a function to create plots of visit properties for a given database of visits (simulated, actual, or hybrid) as a function of time.
+Properties whose distribution the boxes represent should be the same ones available in <a class="reference internal" href="#visit-property-histogram">Visit property histogram</a>.</p>
+</div>
+<div class="section" id="visit-property-box-plot">
+<h3>6.1.11&nbsp;&nbsp;&nbsp;Visit property box plot</h3>
+<p>The <tt class="docutils literal">schedview</tt> module shall include a function to create box plots of visit properties for a given database of visits (simulated, actual, or hybrid).
+Properties whose distribution the boxes represent should be the same ones available in <a class="reference internal" href="#visit-property-histogram">Visit property histogram</a>. Groupings that determine the content of each box shall include divisitions by hour, night, month, or year, and should include other options.</p>
+</div>
+<div class="section" id="visit-property-hourglass-plot">
+<h3>6.1.12&nbsp;&nbsp;&nbsp;Visit property hourglass plot</h3>
+<p>The <tt class="docutils literal">schedview</tt> module shall include a function to create hourglass plots of visit properties for a given database of visits (simulated, actual, or hybrid). (See RTN-016 figures 4 and 5.)
+Properties whose distribution the boxes represent should be the same ones available in <a class="reference internal" href="#visit-property-histogram">Visit property histogram</a>.</p>
+</div>
+<div class="section" id="loaded-filter-plot">
+<h3>6.1.13&nbsp;&nbsp;&nbsp;Loaded filter plot</h3>
+<p>The <tt class="docutils literal">schedview</tt> module shall include a function to create a plot showing the loaded filters as a function of time, given a database of visits (simulated, actual, or hybrid) and a time window.</p>
+</div>
+<div class="section" id="pre-scheduled-visit-table">
+<h3>6.1.14&nbsp;&nbsp;&nbsp;Pre-scheduled visit table</h3>
+<p>The <tt class="docutils literal">schedview</tt> module shall include a function to create a table of pre-scheduled visits in a given scheduler and time range.
+Columns should include the start and stop times, filters used, and airmass ranges.</p>
+</div>
+<div class="section" id="survey-reward-and-feasibility-plot">
+<h3>6.1.15&nbsp;&nbsp;&nbsp;Survey reward and feasibility plot</h3>
+<p>The <tt class="docutils literal">schedview</tt> module shall include a function to create a plot showing the rewards and fealibility of surveys included in an instance of a scheduler, over a specified time window. The plot should include two panels, one above the other, with time on horizontal axis. In upper panel, one line per survey, lines should show the (maximum) reward as a function of time. In lower panel, horizontal bars (one per survey) should show when each survey is feasible.</p>
+</div>
+<div class="section" id="telescope-model-validation-plot">
+<h3>6.1.16&nbsp;&nbsp;&nbsp;Telescope model validation plot</h3>
+<p>The <tt class="docutils literal">schedview</tt> module shall include a function to create a plot of the actual vs. modeled values for each property modeled by the instrument model in <tt class="docutils literal">rubin_sim</tt>, for all visits in a visit database over a given time window.
+Validated values should include slew time, filter change time, shutter time, readout time, total overhead between successive exposures, sky brightness, delivered PSF width (given DIMM seeing), and achieved depth.</p>
+</div>
+<div class="section" id="visit-summary-statistics-table">
+<h3>6.1.17&nbsp;&nbsp;&nbsp;Visit summary statistics table</h3>
+<p>The <tt class="docutils literal">schedview</tt> module shall include a function to create a table showing basic statistics for visits in a visit database, within a given time window.
+Statistics should include:
+- Total wall clock time
+- Total open shutter time
+- Total t_eff
+- Total efficiency (total exposure time/total observing time)
+- Effective efficiency (total t_eff/total observing time)
+- Numbers of visits in each filter
+- Numbers of visits in each survey</p>
+</div>
+<div class="section" id="achieved-summary-metric-time-series-plot">
+<h3>6.1.18&nbsp;&nbsp;&nbsp;Achieved summary metric time series plot</h3>
+<p>The <tt class="docutils literal">schedview</tt> module shall include a function to create a plot showing the values of summary metrics as a function of time.
+There should be an option to overplot the values from the simulated baseline.</p>
+</div>
+<div class="section" id="predicted-summary-metric-time-series-plot">
+<h3>6.1.19&nbsp;&nbsp;&nbsp;Predicted summary metric time series plot</h3>
+<p>The <tt class="docutils literal">schedview</tt> module shall include a function to create a plot showing the predicted final value of summary metrics (selectable by a drop down) as a function of time. That is, the value at time <tt class="docutils literal">t</tt> should show the value as calculated from a database that includes actual visits before <cite>t</cite>, and simualted visits after <cite>t</cite>.
+There should be an optional horizontal line showing the value from a simulated baseline.</p>
+</div>
+<div class="section" id="other-maf-metric-plot">
+<h3>6.1.20&nbsp;&nbsp;&nbsp;Other MAF metric plot</h3>
+<p>The <tt class="docutils literal">schedview</tt> module shall include a function to create arbitrary MAF metric plots given a database of (achieved, simulated, or hybrid) visits.</p>
+</div>
+</div>
+<div class="section" id="night-plan">
+<h2>6.2&nbsp;&nbsp;&nbsp;Night plan</h2>
+<div class="section" id="introduction-2">
+<h3>6.2.1&nbsp;&nbsp;&nbsp;Introduction</h3>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">RTN-016 section 4.2</p>
+</div>
+</div>
+<div class="section" id="execution-at-rubin-observatory">
+<h3>6.2.2&nbsp;&nbsp;&nbsp;Execution at Rubin Observatory</h3>
+<p>Creation of the night plan shall be executable at the observatory site, using site infrastructure.</p>
+</div>
+<div class="section" id="automatic-creation">
+<h3>6.2.3&nbsp;&nbsp;&nbsp;Automatic creation</h3>
+<p>A night plan shall be created before each night of observing.
+The plan should be created automatically, either with minimial human interaction (e.g. hitting a button on a web page) or none at all.</p>
+</div>
+<div class="section" id="night-plan-content">
+<h3>6.2.4&nbsp;&nbsp;&nbsp;Night plan content</h3>
+<p>The night plan should include the following:</p>
+<ul class="simple">
+<li><a class="reference internal" href="#table-of-astronomical-events">Table of astronomical events</a> for the planned night</li>
+<li><a class="reference internal" href="#sky-map">Sky map</a> for times during the planned night, including simulated visits for the night</li>
+<li><a class="reference internal" href="#ddf-schedule-table">DDF schedule table</a> for the planned night</li>
+<li><a class="reference internal" href="#field-survey-plot">Field survey plot</a> for the planned night</li>
+<li><a class="reference internal" href="#pre-scheduled-visit-table">Pre-scheduled visit table</a> for the planned night</li>
+<li><a class="reference internal" href="#survey-reward-and-feasibility-plot">Survey reward and feasibility plot</a> for the planned night.</li>
+</ul>
+<p>The night plan should alse include the following plots for the results of one or <cite>opsim</cite> simulations of the night:</p>
+<ul class="simple">
+<li><a class="reference internal" href="#visit-property-histogram">Visit property histogram</a> for each simulation of the planned night</li>
+<li><a class="reference internal" href="#loaded-filter-plot">Loaded filter plot</a> for each simulation of the planned night</li>
+<li><a class="reference internal" href="#visit-table">Visit table</a> for the simulation of the planned night</li>
+</ul>
+</div>
+</div>
+<div class="section" id="night-report">
+<h2>6.3&nbsp;&nbsp;&nbsp;Night report</h2>
+<div class="section" id="introduction-3">
+<h3>6.3.1&nbsp;&nbsp;&nbsp;Introduction</h3>
+<p>RTN-016 section 4.4 gives an overview of the contents of scheduler and progress related elements in the night report.
+Higher level requirments related to the night report include SE-30/OSS-
+REQ-0131, LSE-30/OSS-REQ-0406, LSE-61/DMS-REQ-0096, and LSE-61/DMS-REQ-0097.</p>
+</div>
+<div class="section" id="automatic-creation-1">
+<h3>6.3.2&nbsp;&nbsp;&nbsp;Automatic creation</h3>
+<p>A night report shall be created after each night of observing.
+The report should be created automatically, either with minimial human interaction (e.g. hitting a button on a web page) or none at all.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">A separate piece of infrastructure to create the scheduler related elements of the night report may not be what we want to do.
+A better approach may be to put this outside the scope of scheduler work, and just have <tt class="docutils literal">schedview</tt> supply the tools to create the elements of the report, and have them called by another system.</p>
+</div>
+</div>
+<div class="section" id="night-report-content">
+<h3>6.3.3&nbsp;&nbsp;&nbsp;Night report content</h3>
+<p>The night report should include:</p>
+<ul class="simple">
+<li><a class="reference internal" href="#visit-summary-statistics-table">Visit summary statistics table</a></li>
+<li><a class="reference internal" href="#table-of-astronomical-events">Table of astronomical events</a></li>
+<li><a class="reference internal" href="#sky-map">Sky map</a> including visits made in the night</li>
+<li><a class="reference internal" href="#telescope-model-validation-plot">Telescope model validation plot</a></li>
+<li><a class="reference internal" href="#ddf-schedule-table">DDF schedule table</a></li>
+<li><a class="reference internal" href="#visit-property-histogram">Visit property histogram</a></li>
+<li><a class="reference internal" href="#visit-property-time-series-plot">Visit property time series plot</a></li>
+<li><a class="reference internal" href="#visit-table">Visit table</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="progress-and-survey-performance-reports">
+<h2>6.4&nbsp;&nbsp;&nbsp;Progress and survey performance reports</h2>
+<div class="section" id="introduction-4">
+<h3>6.4.1&nbsp;&nbsp;&nbsp;Introduction</h3>
+<p>RTN-016 section 4.6</p>
+</div>
+<div class="section" id="automatic-creation-2">
+<h3>6.4.2&nbsp;&nbsp;&nbsp;Automatic creation</h3>
+<p>A progress and survey performance report shall be created automatically after each night of observing.</p>
+</div>
+<div class="section" id="static-figures">
+<h3>6.4.3&nbsp;&nbsp;&nbsp;Static figures</h3>
+<p>The progress and survey performance report generation shall create static files for each figure, suitable for inclusion in printed documents.
+This requirement <em>does not</em> preclude generation of interactive and dynamic plots in addition to the static forms.</p>
+</div>
+<div class="section" id="progress-and-survey-performance-report-content">
+<h3>6.4.4&nbsp;&nbsp;&nbsp;Progress and survey performance report content</h3>
+<ul class="simple">
+<li><a class="reference internal" href="#visit-summary-statistics-table">Visit summary statistics table</a></li>
+<li><a class="reference internal" href="#sky-map">Sky map</a> including options to show current and simulated final healpix metrics</li>
+<li><a class="reference internal" href="#achieved-summary-metric-time-series-plot">Achieved summary metric time series plot</a></li>
+<li><a class="reference internal" href="#predicted-summary-metric-time-series-plot">Predicted summary metric time series plot</a></li>
+<li><a class="reference internal" href="#visit-property-hourglass-plot">Visit property hourglass plot</a></li>
+<li><a class="reference internal" href="#other-maf-metric-plot">Other MAF metric plot</a> for achieved and extrapolated databases of visits, for the most important set of metrics (e.g. the depth-area plot).</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
